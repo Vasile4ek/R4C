@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 import robots.views
+import services.reports
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('robots/api', robots.views.robots_api),
+    path('robots/weekly_report', services.reports.weekly_report)
 ]
