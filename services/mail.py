@@ -24,6 +24,3 @@ def send_mail_to_customer(sender, instance, created, **kwargs):
             fail_silently=False,
         )
 
-
-def send_mail(reciever, model, version):
-    pass
